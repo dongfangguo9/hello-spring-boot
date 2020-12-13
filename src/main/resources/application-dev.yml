@@ -1,0 +1,33 @@
+server:
+  port: 8081
+  servlet:
+    encoding:
+      enabled: true
+      charset: utf-8
+      force: true #配置字符编码过滤器
+logging:
+  file:
+    name: log #配置日志文件名字
+spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html #配置模板信息
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    password: root
+    username: root
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+
+name: test
+
+person:
+  name: tom
+  age: 19
+  addr: shanghai

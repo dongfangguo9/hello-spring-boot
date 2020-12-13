@@ -1,0 +1,17 @@
+#环境配置
+spring:
+  profiles:
+    active: cac
+
+
+---
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: cac #该环境需要注释掉redis配置
+---
+#该环境不可用，与thymeleaf模板冲突
+spring:
+  profiles: jsp
