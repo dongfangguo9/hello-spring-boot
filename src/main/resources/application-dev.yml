@@ -31,3 +31,8 @@ person:
   name: tom
   age: 19
   addr: shanghai
+
+pets:
+  -cat
+  -dog
+  -pig
